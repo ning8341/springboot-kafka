@@ -1,16 +1,16 @@
-package ning.kafaka;
+package ning.kafka;
 
-import ning.kafaka.send.MessageSend;
+import ning.kafka.send.MessageSend;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
-public class KafakaProjectApplication {
+public class KafkaProjectApplication {
 
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext context = SpringApplication.run(KafakaProjectApplication.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(KafkaProjectApplication.class, args);
         MessageSend sender = context.getBean(MessageSend.class);
 
         for (int i = 0; i < 3; i++) {

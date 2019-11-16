@@ -1,4 +1,4 @@
-package ning.kafaka.entity;
+package ning.kafka.entity;
 
 import lombok.Data;
 
